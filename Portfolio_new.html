@@ -977,6 +977,26 @@
             background: var(--gradient-tertiary);
         }
 
+        /* Project Note Styling */
+        .project-note {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid var(--neon-purple);
+            border-radius: var(--border-radius);
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            font-style: italic;
+            text-align: center;
+            transition: var(--transition-smooth);
+        }
+
+        .project-note:hover {
+            background: rgba(139, 92, 246, 0.15);
+            border-color: var(--neon-pink);
+            transform: translateY(-2px);
+        }
+
         /* Futuristic Experience Timeline */
         .timeline {
             position: relative;
@@ -1897,6 +1917,585 @@
             scroll-behavior: smooth;
         }
 
+        /* ============================================
+           COMPREHENSIVE MOBILE RESPONSIVE STYLES
+           ============================================ */
+
+        /* Tablet & Small Desktop */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .hero {
+                padding: 5rem 1.5rem 3rem;
+            }
+
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.2rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            .case-study-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+        }
+
+        /* Mobile Landscape & Small Tablets */
+        @media (max-width: 768px) {
+            /* Typography adjustments */
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            /* Navigation */
+            .navbar {
+                padding: 1rem 0;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+
+            .nav-menu {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .nav-link {
+                font-size: 0.85rem;
+                padding: 0.5rem 0.75rem;
+            }
+
+            /* Hero Section */
+            .hero {
+                min-height: auto;
+                padding: 4rem 1rem 2rem;
+            }
+
+            .hero-content {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero-description {
+                font-size: 0.95rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                gap: 1rem;
+                width: 100%;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .hero-image {
+                margin-top: 2rem;
+            }
+
+            .profile-card {
+                max-width: 100%;
+            }
+
+            /* Projects Section */
+            .case-study-card {
+                padding: 1.5rem;
+            }
+
+            .case-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .case-description {
+                font-size: 0.95rem;
+            }
+
+            .project-details h4 {
+                font-size: 1rem;
+                margin-top: 1rem;
+            }
+
+            .project-details p {
+                font-size: 0.9rem;
+            }
+
+            .case-process {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .process-step {
+                padding: 1rem;
+            }
+
+            .process-step h4 {
+                font-size: 1rem;
+            }
+
+            .process-step p {
+                font-size: 0.85rem;
+            }
+
+            .case-tags {
+                gap: 0.5rem;
+            }
+
+            .tag {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.8rem;
+            }
+
+            .case-actions {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .btn-case-study {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+            }
+
+            /* Timeline */
+            .timeline {
+                padding-left: 1rem;
+            }
+
+            .timeline-item::before {
+                left: -1rem;
+            }
+
+            .timeline-content {
+                padding: 1.5rem;
+            }
+
+            .timeline-title {
+                font-size: 1.3rem;
+            }
+
+            .timeline-description {
+                font-size: 0.95rem;
+            }
+
+            .timeline-skills {
+                gap: 0.5rem;
+            }
+
+            .skill-pill {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.8rem;
+            }
+
+            .timeline-achievements {
+                gap: 0.75rem;
+            }
+
+            .achievement {
+                font-size: 0.85rem;
+            }
+
+            /* Skills Section */
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .skill-category h3 {
+                font-size: 1.3rem;
+            }
+
+            .skill-list {
+                gap: 0.75rem;
+            }
+
+            .skill-item {
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
+            }
+
+            /* Contact Section */
+            .contact-content {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .contact-text h2 {
+                font-size: 2rem;
+            }
+
+            .contact-methods {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .contact-card {
+                padding: 1.5rem;
+            }
+
+            /* Footer */
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .footer-tagline {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Mobile Portrait */
+        @media (max-width: 480px) {
+            /* Container */
+            .container {
+                padding: 0 1rem;
+            }
+
+            /* Typography */
+            .section-title {
+                font-size: 1.75rem;
+            }
+
+            .section-subtitle {
+                font-size: 0.9rem;
+            }
+
+            /* Navigation */
+            .navbar {
+                padding: 0.75rem 0;
+            }
+
+            .logo {
+                font-size: 1rem;
+            }
+
+            .nav-menu {
+                gap: 0.5rem;
+                padding: 0 0.5rem;
+            }
+
+            .nav-link {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.6rem;
+            }
+
+            /* Hero Section */
+            .hero {
+                padding: 3rem 1rem 2rem;
+            }
+
+            .hero h1 {
+                font-size: 1.75rem;
+                line-height: 1.3;
+            }
+
+            .hero-tagline {
+                font-size: 1rem;
+            }
+
+            .hero-description {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .photo-placeholder {
+                font-size: 2.5rem;
+            }
+
+            .profile-tags {
+                gap: 0.5rem;
+            }
+
+            /* Projects */
+            .case-study-card {
+                padding: 1.25rem;
+            }
+
+            .image-placeholder {
+                height: 180px;
+                font-size: 1.5rem;
+            }
+
+            .case-content h3 {
+                font-size: 1.2rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .case-description {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+
+            .project-details h4 {
+                font-size: 0.95rem;
+                margin-top: 0.75rem;
+            }
+
+            .project-details p {
+                font-size: 0.85rem;
+                line-height: 1.5;
+            }
+
+            .case-tags {
+                gap: 0.4rem;
+            }
+
+            .tag {
+                font-size: 0.7rem;
+                padding: 0.35rem 0.7rem;
+            }
+
+            .btn-case-study {
+                font-size: 0.85rem;
+                padding: 0.75rem 1.5rem;
+            }
+
+            /* Timeline */
+            .timeline {
+                padding-left: 0.75rem;
+            }
+
+            .timeline-item::before {
+                left: -0.75rem;
+                width: 12px;
+                height: 12px;
+            }
+
+            .timeline-item::after {
+                left: -0.45rem;
+            }
+
+            .timeline-date {
+                font-size: 0.85rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .timeline-company {
+                font-size: 1rem;
+            }
+
+            .timeline-content {
+                padding: 1.25rem;
+            }
+
+            .timeline-title {
+                font-size: 1.2rem;
+            }
+
+            .timeline-description {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+
+            .achievement {
+                font-size: 0.8rem;
+                padding: 0.5rem;
+            }
+
+            /* Skills */
+            .skill-category h3 {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+
+            .skill-item {
+                font-size: 0.8rem;
+                padding: 0.5rem 0.9rem;
+            }
+
+            /* Contact */
+            .contact-text h2 {
+                font-size: 1.75rem;
+                line-height: 1.3;
+            }
+
+            .contact-description {
+                font-size: 0.9rem;
+            }
+
+            .contact-method h4 {
+                padding: 1.25rem;
+            }
+
+            .timeline-title {
+                font-size: 1.2rem;
+            }
+
+            .timeline-description {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+
+            .achievement {
+                font-size: 0.8rem;
+                padding: 0.5rem;
+            }
+
+            /* Skills */
+            .skill-category h3 {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+
+            .skill-item {
+                font-size: 0.8rem;
+            /* Footer */
+            .footer {
+                padding: 2rem 1rem;
+            }
+
+            .footer-left p {
+                font-size: 0.9rem;
+            }
+
+            .footer-tagline {
+                font-size: 0.85rem;
+            }
+
+            .footer-location {
+                font-size: 0.9rem;
+            }
+
+            /* Carousel Controls */
+            .carousel-indicators {
+                gap: 0.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .indicator {
+                width: 8px;
+                height: 8px;
+            }
+
+            .carousel-progress {
+                width: 100px;
+                height: 3px;
+            }
+
+            .carousel-auto-control {
+                width: 24px;
+                height: 24px;
+                font-size: 0.65rem;
+            }
+        }
+
+        /* Extra Small Devices */
+        @media (max-width: 360px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .nav-link {
+                font-size: 0.7rem;
+                padding: 0.35rem 0.5rem;
+            }
+
+            .case-content h3 {
+                font-size: 1.1rem;
+            }
+
+            .timeline-title {
+                font-size: 1.1rem;
+            }
+
+            .btn-case-study {
+                font-size: 0.8rem;
+                padding: 0.7rem 1.25rem;
+            }
+        }
+
+        /* Disable parallax and heavy animations on mobile for performance */
+        @media (max-width: 768px) {
+            .parallax-slow,
+            .parallax-medium,
+            .parallax-fast {
+                transform: none !important;
+            }
+
+            .glitch::before,
+            .glitch::after {
+                display: none;
+            }
+
+            .cursor {
+                display: none;
+            }
+
+            .case-study-card:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Touch device optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .btn-primary:hover,
+            .btn-secondary:hover,
+            .btn-case-study:hover {
+                transform: translateY(-2px);
+            }
+
+            .case-study-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .nav-link:hover::after {
+                width: 0;
+            }
+
+            .nav-link.active::after {
+                width: 100%;
+            }
+        }
+
         /* Focus States for Accessibility */
         .btn:focus,
         .nav-link:focus,
@@ -2097,32 +2696,32 @@
                             <div class="case-study-grid">
                                 <div class="case-study-card">
                                     <div class="case-image">
-                                        <div class="image-placeholder">AI Dashboard</div>
-                                        <div class="case-category">UX Design</div>
+                                        <div class="image-placeholder">SmartFarm Pro</div>
+                                        <div class="case-category">AI Agriculture</div>
                                     </div>
                                     <div class="case-content">
-                                        <h3>AI-Powered Resume Classifier</h3>
-                                        <p class="case-description">Redesigned complex NLP model outputs into an intuitive talent screening interface, improving recruiter efficiency by 60%</p>
+                                        <h3>SmartFarm Pro — AI Precision Farming</h3>
+                                        <p class="case-description">Empowering farmers with AI, automation, and real-time insights to boost productivity and sustainability through comprehensive precision agriculture technology</p>
                                         
                                         <div class="project-details">
                                             <h4>Key Features</h4>
-                                            <p>• BERT-based NLP for semantic matching • Real-time candidate filtering • Intuitive ranking dashboard • 60% efficiency improvement for 200+ recruiters</p>
+                                            <p>• Computer vision drone surveillance • ML yield prediction • Voice-controlled IoT sensors • 30% crop yield boost • 40% water conservation</p>
                                             <h4>Tech Stack</h4>
-                                            <p>React.js, Python Flask, BERT NLP, Elasticsearch, D3.js</p>
+                                            <p>React.js, Node.js, TensorFlow, IoT Sensors, Weather API</p>
                                         </div>
                                         
                                         <div class="case-tags">
                                             <span class="tag">React.js</span>
-                                            <span class="tag">Python Flask</span>
-                                            <span class="tag">BERT NLP</span>
-                                            <span class="tag">Elasticsearch</span>
-                                            <span class="tag">D3.js</span>
-                                            <span class="tag">UX Research</span>
+                                            <span class="tag">Node.js</span>
+                                            <span class="tag">TensorFlow</span>
+                                            <span class="tag">Computer Vision</span>
+                                            <span class="tag">IoT Sensors</span>
+                                            <span class="tag">Weather API</span>
                                         </div>
                                         
                                         <div class="case-actions">
-                                            <a href="https://github.com/karunyadhana6/Resumeclassifier" class="btn-case-study">View on GitHub</a>
-                                            <a href="https://karunyadhana6.github.io/Resumeclassifier/resume_display.html" class="btn-case-study">Live Demo</a>
+                                            <a href="https://github.com/karunyadhana6/Greencycle" class="btn-case-study">View Project</a>
+                                            <a href="https://karunyadhana6.github.io/Greencycle/index.html" class="btn-case-study">Live Demo</a>
                                         </div>
                                     </div>
                                 </div>
@@ -2153,131 +2752,9 @@
                                         </div>
                                         
                                         <div class="case-actions">
-                                            <a href="https://github.com/karunyadhanasekaran/quantumnest-hotel" class="btn-case-study">View on GitHub</a>
+                                            <a href="https://github.com/karunyadhana6/Taskmanager1" class="btn-case-study">View Project</a>
                                             <a href="https://karunyadhana6.github.io/Taskmanager1/Hotel_management.html" class="btn-case-study">Hotel Demo</a>
                                             <a href="https://karunyadhana6.github.io/Taskmanager1/Security_hotel.html" class="btn-case-study">Security Demo</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="case-study-card">
-                                    <div class="case-image">
-                                        <div class="image-placeholder">SmartFarm Pro</div>
-                                        <div class="case-category">AI Agriculture</div>
-                                    </div>
-                                    <div class="case-content">
-                                        <h3>SmartFarm Pro — AI Precision Farming</h3>
-                                        <p class="case-description">Empowering farmers with AI, automation, and real-time insights to boost productivity and sustainability through comprehensive precision agriculture technology</p>
-                                        
-                                        <div class="project-details">
-                                            <h4>Key Features</h4>
-                                            <p>• Computer vision drone surveillance • ML yield prediction • Voice-controlled IoT sensors • 30% crop yield boost • 40% water conservation</p>
-                                            <h4>Tech Stack</h4>
-                                            <p>React.js, Node.js, TensorFlow, IoT Sensors, Weather API</p>
-                                        </div>
-                                        
-                                        <div class="case-tags">
-                                            <span class="tag">React.js</span>
-                                            <span class="tag">Node.js</span>
-                                            <span class="tag">TensorFlow</span>
-                                            <span class="tag">Computer Vision</span>
-                                            <span class="tag">IoT Sensors</span>
-                                            <span class="tag">Weather API</span>
-                                        </div>
-                                        
-                                        <div class="case-actions">
-                                            <a href="https://github.com/karunyadhanasekaran/smartfarm-pro" class="btn-case-study">View on GitHub</a>
-                                            <a href="https://karunyadhana6.github.io/Greencycle/index.html" class="btn-case-study">Live Demo</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 2: Projects 4-6 -->
-                        <div class="carousel-slide">
-                            <div class="case-study-grid">
-                                <div class="case-study-card">
-                                    <div class="case-image">
-                                        <div class="image-placeholder">EcoTrack</div>
-                                        <div class="case-category">Environmental Tech</div>
-                                    </div>
-                                    <div class="case-content">
-                                        <h3>EcoTrack — Sustainability Analytics</h3>
-                                        <p class="case-description">Comprehensive carbon footprint tracking and sustainability analytics platform for organizations to monitor, reduce, and offset their environmental impact</p>
-                                        
-                                        <div class="project-details">
-                                            <h4>Key Features</h4>
-                                            <p>• Carbon footprint tracking & analytics • AI-powered emission predictions • Blockchain carbon credits • 35% emission reduction • 95% calculation accuracy</p>
-                                            <h4>Tech Stack</h4>
-                                            <p>Vue.js, Django, Blockchain, Satellite API, AI Prediction</p>
-                                        </div>
-                                        
-                                        <div class="case-tags">
-                                            <span class="tag">Vue.js</span>
-                                            <span class="tag">Django</span>
-                                            <span class="tag">Blockchain</span>
-                                            <span class="tag">Satellite API</span>
-                                            <span class="tag">AI Prediction</span>
-                                            <span class="tag">ESG Reporting</span>
-                                        </div>
-                                        
-                                        <div class="case-actions">
-                                            <a href="https://github.com/karunyadhanasekaran/ecotrack-analytics" class="btn-case-study">View on GitHub</a>
-                                            <a href="https://ecotrack-demo.herokuapp.com" class="btn-case-study">Live Demo</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="case-study-card">
-                                    <div class="case-image">
-                                        <div class="image-placeholder">Cancer AI</div>
-                                        <div class="case-category">Healthcare AI</div>
-                                    </div>
-                                    <div class="case-content">
-                                        <h3>AI Modelling for Cancer Survival Prediction</h3>
-                                        <p class="case-description">Advanced machine learning framework for predicting patient survival outcomes using real-world cancer datasets, enabling personalized treatment planning and clinical decision support</p>
-                                        
-                                        <div class="case-process">
-                                            <div class="process-step">
-                                                <h4>Data Preprocessing</h4>
-                                                <p>Comprehensive data cleaning, normalization, and handling of missing values for complex medical datasets with multiple patient variables</p>
-                                            </div>
-                                            <div class="process-step">
-                                                <h4>Feature Engineering</h4>
-                                                <p>Advanced feature selection and engineering techniques to enhance model interpretability and identify key prognostic factors</p>
-                                            </div>
-                                            <div class="process-step">
-                                                <h4>Model Development</h4>
-                                                <p>Implemented and compared Logistic Regression, Random Forest, and Cox Proportional Hazards models for survival analysis</p>
-                                            </div>
-                                            <div class="process-step">
-                                                <h4>Clinical Insights</h4>
-                                                <p>Delivered actionable insights using ROC-AUC, Kaplan-Meier curves, and SHAP values for clinical decision support</p>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="project-details">
-                                            <h4>Key Achievements</h4>
-                                            <p>• Advanced data preprocessing for medical datasets • Feature engineering for clinical interpretability • Comparative analysis of survival models • SHAP-based explainable AI implementation • Kaplan-Meier survival curve analysis</p>
-                                            <h4>Tech Stack</h4>
-                                            <p>Python, Scikit-learn, Survival Analysis, SHAP, Pandas, NumPy, Matplotlib, Seaborn, Cox Regression</p>
-                                        </div>
-                                        
-                                        <div class="case-tags">
-                                            <span class="tag">Survival Analysis</span>
-                                            <span class="tag">Healthcare ML</span>
-                                            <span class="tag">Cox Regression</span>
-                                            <span class="tag">SHAP</span>
-                                            <span class="tag">Explainable AI</span>
-                                            <span class="tag">Clinical Data</span>
-                                            <span class="tag">Cancer Research</span>
-                                            <span class="tag">Python</span>
-                                        </div>
-                                        
-                                        <div class="case-actions">
-                                            <a href="https://github.com/karunyadhanasekaran/cancer-survival-prediction" class="btn-case-study">View on GitHub</a>
-                                            <a href="https://cancer-ai-demo.streamlit.app" class="btn-case-study">Live Demo</a>
                                         </div>
                                     </div>
                                 </div>
@@ -2308,8 +2785,109 @@
                                         </div>
                                         
                                         <div class="case-actions">
-                                            <a href="https://github.com/karunyadhana6/Taskmanager1" class="btn-case-study">View on GitHub</a>
+                                            <a href="https://github.com/karunyadhana6/Taskmanager1" class="btn-case-study">View Project</a>
                                             <a href="https://karunyadhana6.github.io/Taskmanager1/drone_delivery.html" class="btn-case-study">Live Demo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2: Projects 4-6 -->
+                        <div class="carousel-slide">
+                            <div class="case-study-grid">
+                                <div class="case-study-card">
+                                    <div class="case-image">
+                                        <div class="image-placeholder">AI Dashboard</div>
+                                        <div class="case-category">UX Design</div>
+                                    </div>
+                                    <div class="case-content">
+                                        <h3>AI-Powered Resume Classifier</h3>
+                                        <p class="case-description">Redesigned complex NLP model outputs into an intuitive talent screening interface, improving recruiter efficiency by 60%</p>
+                                        
+                                        <div class="project-details">
+                                            <h4>Key Features</h4>
+                                            <p>• BERT-based NLP for semantic matching • Real-time candidate filtering • Intuitive ranking dashboard • 60% efficiency improvement for 200+ recruiters</p>
+                                            <h4>Tech Stack</h4>
+                                            <p>React.js, Python Flask, BERT NLP, Elasticsearch, D3.js</p>
+                                        </div>
+                                        
+                                        <div class="case-tags">
+                                            <span class="tag">React.js</span>
+                                            <span class="tag">Python Flask</span>
+                                            <span class="tag">BERT NLP</span>
+                                            <span class="tag">Elasticsearch</span>
+                                            <span class="tag">D3.js</span>
+                                            <span class="tag">UX Research</span>
+                                        </div>
+                                        
+                                        <div class="case-actions">
+                                            <a href="https://github.com/karunyadhana6/Resumeclassifier" class="btn-case-study">View Project</a>
+                                            <a href="https://karunyadhana6.github.io/Resumeclassifier/resume_display.html" class="btn-case-study">Live Demo</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="case-study-card">
+                                    <div class="case-image">
+                                        <div class="image-placeholder">EcoTrack</div>
+                                        <div class="case-category">Environmental Tech</div>
+                                    </div>
+                                    <div class="case-content">
+                                        <h3>EcoTrack — Sustainability Analytics</h3>
+                                        <p class="case-description">Comprehensive carbon footprint tracking and sustainability analytics platform for organizations to monitor, reduce, and offset their environmental impact</p>
+                                        
+                                        <div class="project-details">
+                                            <h4>Key Features</h4>
+                                            <p>• Carbon footprint tracking & analytics • AI-powered emission predictions • Blockchain carbon credits • 35% emission reduction • 95% calculation accuracy</p>
+                                            <h4>Tech Stack</h4>
+                                            <p>Vue.js, Django, Blockchain, Satellite API, AI Prediction</p>
+                                        </div>
+                                        
+                                        <div class="case-tags">
+                                            <span class="tag">Vue.js</span>
+                                            <span class="tag">Django</span>
+                                            <span class="tag">Blockchain</span>
+                                            <span class="tag">Satellite API</span>
+                                            <span class="tag">AI Prediction</span>
+                                            <span class="tag">ESG Reporting</span>
+                                        </div>
+                                        
+                                        <div class="case-actions">
+                                            <span class="project-note">Project documentation available upon request</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="case-study-card">
+                                    <div class="case-image">
+                                        <div class="image-placeholder">Cancer AI</div>
+                                        <div class="case-category">Healthcare AI</div>
+                                    </div>
+                                    <div class="case-content">
+                                        <h3>AI Modelling for Cancer Survival Prediction</h3>
+                                        <p class="case-description">Advanced machine learning framework for predicting patient survival outcomes using real-world cancer datasets, enabling personalized treatment planning and clinical decision support</p>
+                                        
+                                        <div class="project-details">
+                                            <h4>Key Features</h4>
+                                            <p>• Advanced data preprocessing for medical datasets • Feature engineering for clinical interpretability • Comparative analysis of survival models • SHAP-based explainable AI implementation • Kaplan-Meier survival curve analysis</p>
+                                            <h4>Tech Stack</h4>
+                                            <p>Python, Scikit-learn, Survival Analysis, SHAP, Pandas, NumPy, Matplotlib, Seaborn, Cox Regression</p>
+                                        </div>
+                                        
+                                        <div class="case-tags">
+                                            <span class="tag">Survival Analysis</span>
+                                            <span class="tag">Healthcare ML</span>
+                                            <span class="tag">Cox Regression</span>
+                                            <span class="tag">SHAP</span>
+                                            <span class="tag">Explainable AI</span>
+                                            <span class="tag">Clinical Data</span>
+                                            <span class="tag">Cancer Research</span>
+                                            <span class="tag">Python</span>
+                                        </div>
+                                        
+                                        <div class="case-actions">
+                                            <span class="project-note">Academic research project - documentation available upon request</span>
                                         </div>
                                     </div>
                                 </div>
@@ -2345,8 +2923,7 @@
                                         </div>
                                         
                                         <div class="case-actions">
-                                            <a href="https://github.com/karunyadhanasekaran/smartit-governance" class="btn-case-study">View on GitHub</a>
-                                            <a href="https://smartit-governance-demo.vercel.app" class="btn-case-study">Live Demo</a>
+                                            <span class="project-note">Enterprise project - case study available upon request</span>
                                         </div>
                                     </div>
                                 </div>
@@ -2360,28 +2937,11 @@
                                         <h3>RetailBot — AI Shopping Assistant</h3>
                                         <p class="case-description">Intelligent e-commerce platform with AI-powered shopping recommendations, virtual assistant, inventory management, and personalized customer experiences</p>
                                         
-                                        <div class="case-process">
-                                            <div class="process-step">
-                                                <h4>Problem Analysis</h4>
-                                                <p>Addressed challenges in product discovery, personalized shopping experiences, inventory optimization, and customer service scalability in e-commerce</p>
-                                            </div>
-                                            <div class="process-step">
-                                                <h4>AI Integration</h4>
-                                                <p>Developed recommendation engines, chatbot for customer service, computer vision for visual search, and predictive analytics for inventory management</p>
-                                            </div>
-                                            <div class="process-step">
-                                                <h4>Platform Development</h4>
-                                                <p>Built responsive e-commerce interface, integrated payment systems, implemented real-time inventory tracking, and automated customer support</p>
-                                            </div>
-                                            <div class="process-step">
-                                                <h4>Impact & Results</h4>
-                                                <p>Increased sales by 40%, improved customer satisfaction by 50%, reduced inventory costs by 25%, and achieved 90% query resolution through AI</p>
-                                            </div>
-                                        </div>
-                                        
                                         <div class="project-details">
-                                            <h4>Technical Implementation</h4>
-                                            <p>Built with Next.js and Node.js, integrated Stripe payment processing, implemented TensorFlow for recommendations, Redis for caching, AI chatbot with Dialogflow, computer vision APIs, and comprehensive analytics dashboard.</p>
+                                            <h4>Key Features</h4>
+                                            <p>• AI recommendation engine • Dialogflow chatbot for customer service • Computer vision visual search • Real-time inventory tracking • 40% sales increase • 50% customer satisfaction improvement</p>
+                                            <h4>Tech Stack</h4>
+                                            <p>Next.js, Node.js, TensorFlow, Stripe API, Dialogflow, Redis, Computer Vision APIs</p>
                                         </div>
                                         
                                         <div class="case-tags">
@@ -2394,8 +2954,7 @@
                                         </div>
                                         
                                         <div class="case-actions">
-                                            <a href="https://github.com/karunyadhanasekaran/retailbot-ai" class="btn-case-study">View on GitHub</a>
-                                            <a href="https://retailbot-demo.vercel.app" class="btn-case-study">Live Demo</a>
+                                            <span class="project-note">Concept project - full details available upon request</span>
                                         </div>
                                     </div>
                                 </div>
@@ -2409,27 +2968,8 @@
                                         <h3>AI-Driven Sustainability in Aviation Industry</h3>
                                         <p class="case-description">Comprehensive AI solution framework for aviation's net-zero goals by 2050, implementing advanced ML techniques for emission reduction, operational optimization, and sustainable aircraft design</p>
                                         
-                                        <div class="case-process">
-                                            <div class="process-step">
-                                                <h4>Flight Path Optimization</h4>
-                                                <p>Implemented XGBoost gradient boosting for intelligent route planning, achieving 3-5% fuel savings through advanced flight path optimization algorithms</p>
-                                            </div>
-                                            <div class="process-step">
-                                                <h4>Contrail Avoidance</h4>
-                                                <p>Developed CNN-based contrail prediction and avoidance system, reducing contrail formation by 54% through real-time atmospheric condition analysis</p>
-                                            </div>
-                                            <div class="process-step">
-                                                <h4>Predictive Maintenance</h4>
-                                                <p>Built neural network models for predictive maintenance, reducing maintenance delays by 20% and optimizing aircraft availability</p>
-                                            </div>
-                                            <div class="process-step">
-                                                <h4>Sustainability Analytics</h4>
-                                                <p>Created comprehensive carbon footprint modeling and sustainability analytics dashboard for real-time emissions tracking and reporting</p>
-                                            </div>
-                                        </div>
-                                        
                                         <div class="project-details">
-                                            <h4>Key Achievements</h4>
+                                            <h4>Key Features</h4>
                                             <p>• 3-5% fuel savings through XGBoost optimization • 54% contrail reduction via CNN models • 20% reduction in maintenance delays • Generative design for lightweight structures • Real-time sustainability analytics</p>
                                             <h4>Tech Stack</h4>
                                             <p>XGBoost, CNNs, Neural Networks, Python, TensorFlow, Data Analytics, Carbon Modeling, Aviation APIs</p>
@@ -2447,8 +2987,7 @@
                                         </div>
                                         
                                         <div class="case-actions">
-                                            <a href="https://github.com/karunyadhanasekaran/aviation-ai-sustainability" class="btn-case-study">View on GitHub</a>
-                                            <a href="https://aviation-ai-demo.vercel.app" class="btn-case-study">Live Demo</a>
+                                            <span class="project-note">Research project - publication and details available upon request</span>
                                         </div>
                                     </div>
                                 </div>
@@ -2542,7 +3081,7 @@
                     <div class="timeline-content">
                         <div class="timeline-date">2019 - 2021</div>
                         <div class="timeline-company">Accenture</div>
-                        <h3 class="timeline-title">Data Engineer tech lead </h3>
+                        <h3 class="timeline-title">Data Engineer Tech Lead </h3>
                         <p class="timeline-description">
                             Built foundational expertise in data engineering while developing a keen eye for user-centered design. Focused on creating efficient ETL processes and data quality frameworks that prioritized both technical excellence and user accessibility.
                         </p>
@@ -2659,6 +3198,11 @@
                         <div class="contact-method">
                             <h4>Email</h4>
                             <a href="mailto:karunyadhanasekaran6@gmail.com" class="contact-link">karunyadhanasekaran6@gmail.com</a>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <h4>Phone</h4>
+                            <a href="tel:+353892419716" class="contact-link">+353 89 241 9716</a>
                         </div>
                         
                         <div class="contact-method">
