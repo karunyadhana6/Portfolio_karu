@@ -108,64 +108,119 @@
 
         .floating-object {
             position: absolute;
-            opacity: 0.06;
+            opacity: 0.18;
             filter: blur(0.5px);
             will-change: transform;
         }
 
         .float-obj-1 {
-            width: 300px;
-            height: 300px;
-            background: linear-gradient(135deg, #d47b9f, #a8556b);
+            width: 450px;
+            height: 450px;
+            background: linear-gradient(135deg, #e8679f, #d47b9f);
             border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-            top: -100px;
+            top: -150px;
             left: 5%;
             animation: float3D-1 8s ease-in-out infinite;
-            box-shadow: 0 20px 60px rgba(212, 123, 159, 0.3);
+            box-shadow: 0 20px 60px rgba(232, 103, 159, 0.4);
         }
 
         .float-obj-2 {
-            width: 250px;
-            height: 250px;
-            background: linear-gradient(135deg, #c97fa8, #b8826d);
+            width: 380px;
+            height: 380px;
+            background: linear-gradient(135deg, #d997c8, #c99882);
             border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
             top: 40%;
             right: 3%;
             animation: float3D-2 10s ease-in-out infinite;
-            box-shadow: 0 25px 70px rgba(201, 127, 168, 0.25);
+            box-shadow: 0 25px 70px rgba(217, 151, 200, 0.35);
         }
 
         .float-obj-3 {
-            width: 200px;
-            height: 200px;
-            background: linear-gradient(135deg, #d47b9f, #c99882);
+            width: 320px;
+            height: 320px;
+            background: linear-gradient(135deg, #e8679f, #d4a890);
             border-radius: 70% 30% 66% 34% / 33% 66% 34% 67%;
             bottom: 10%;
             left: 15%;
             animation: float3D-3 12s ease-in-out infinite;
-            box-shadow: 0 15px 50px rgba(212, 123, 159, 0.25);
+            box-shadow: 0 15px 50px rgba(232, 103, 159, 0.35);
         }
 
         .float-obj-4 {
-            width: 280px;
-            height: 280px;
-            background: linear-gradient(135deg, #a8556b, #c97fa8);
+            width: 420px;
+            height: 420px;
+            background: linear-gradient(135deg, #b8756b, #d997c8);
             border-radius: 20% 80% 80% 20% / 20% 20% 80% 80%;
             top: 50%;
             right: 8%;
             animation: float3D-4 11s ease-in-out infinite;
-            box-shadow: 0 20px 60px rgba(168, 85, 107, 0.25);
+            box-shadow: 0 20px 60px rgba(184, 117, 107, 0.3);
         }
 
         .float-obj-5 {
-            width: 220px;
-            height: 220px;
-            background: linear-gradient(135deg, #b8826d, #d47b9f);
+            width: 350px;
+            height: 350px;
+            background: linear-gradient(135deg, #d4a890, #e8679f);
             border-radius: 50% 50% 50% 50% / 60% 40% 60% 40%;
             bottom: 15%;
             right: 12%;
             animation: float3D-5 9s ease-in-out infinite;
-            box-shadow: 0 18px 55px rgba(184, 130, 109, 0.25);
+            box-shadow: 0 18px 55px rgba(212, 168, 144, 0.35);
+        }
+
+        .float-obj-6 {
+            width: 280px;
+            height: 280px;
+            background: linear-gradient(135deg, #e8679f, #d997c8);
+            border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+            top: 20%;
+            left: 50%;
+            animation: float3D-1 13s ease-in-out infinite;
+            box-shadow: 0 20px 60px rgba(232, 103, 159, 0.35);
+        }
+
+        .float-obj-7 {
+            width: 320px;
+            height: 320px;
+            background: linear-gradient(135deg, #d4a890, #d997c8);
+            border-radius: 65% 35% 40% 60% / 35% 65% 40% 60%;
+            bottom: 30%;
+            left: 50%;
+            animation: float3D-2 14s ease-in-out infinite;
+            box-shadow: 0 22px 65px rgba(212, 168, 144, 0.32);
+        }
+
+        .float-obj-8 {
+            width: 290px;
+            height: 290px;
+            background: linear-gradient(135deg, #d47b9f, #d4a890);
+            border-radius: 25% 75% 75% 25% / 25% 25% 75% 75%;
+            top: 60%;
+            left: 8%;
+            animation: float3D-3 15s ease-in-out infinite;
+            box-shadow: 0 18px 52px rgba(212, 123, 159, 0.33);
+        }
+
+        .float-obj-9 {
+            width: 310px;
+            height: 310px;
+            background: linear-gradient(135deg, #d997c8, #e8679f);
+            border-radius: 55% 45% 50% 50% / 50% 55% 45% 50%;
+            top: 75%;
+            right: 20%;
+            animation: float3D-4 16s ease-in-out infinite;
+            box-shadow: 0 20px 58px rgba(217, 151, 200, 0.34);
+        }
+
+        .float-obj-10 {
+            width: 270px;
+            height: 270px;
+            background: linear-gradient(135deg, #e8679f, #d4a890);
+            border-radius: 45% 55% 55% 45% / 55% 45% 55% 45%;
+            bottom: 5%;
+            left: 35%;
+            animation: float3D-5 17s ease-in-out infinite;
+            box-shadow: 0 16px 48px rgba(232, 103, 159, 0.32);
         }
 
         @keyframes float3D-1 {
@@ -3021,6 +3076,11 @@
         <div class="floating-object float-obj-3"></div>
         <div class="floating-object float-obj-4"></div>
         <div class="floating-object float-obj-5"></div>
+        <div class="floating-object float-obj-6"></div>
+        <div class="floating-object float-obj-7"></div>
+        <div class="floating-object float-obj-8"></div>
+        <div class="floating-object float-obj-9"></div>
+        <div class="floating-object float-obj-10"></div>
     </div>
 
     <!-- Futuristic Navigation -->
